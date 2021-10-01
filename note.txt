@@ -1,0 +1,13 @@
+docker build -t jiniusz/demoapp:1.0 .
+
+writing image sha256:0a4280706cf4a3da80e127494fed732ce5fcdb18e12511389a09827a9b6acdb6
+naming to docker.io/jiniusz/demoapp:1.0
+
+docker run -p 5000:8080 0a4280706cf4
+
+docker volume create shared-stuff
+// maybe you have to push some option through (docker run --xxx) to run with volume
+
+<---------------------------------------->
+
+docker-compose up
